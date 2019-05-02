@@ -1,0 +1,67 @@
+.user-wrapper {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+
+  .logout {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    z-index: 9999;
+  }
+}
+
+.user-card {
+  box-shadow: 0 2px 0 rgba(90, 97, 105, .11),
+  0 4px 8px rgba(90, 97, 105, .12),
+  0 10px 10px rgba(90, 97, 105, .06),
+  0 7px 70px rgba(90, 97, 105, .1);
+  background-color: #fff;
+  border: none;
+  border-radius: .625rem;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  margin-top: 3rem !important;
+  max-width: 50vw;
+  .user-name {
+    font-weight: 500;
+    font-size: 1.563rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: .5rem;
+    padding-bottom: .5rem;
+    border-bottom: 1px solid #e1e5eb !important;
+  }
+  .user-details-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.5rem;
+
+    .user-detail-wrapper {
+      display: flex;
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+      flex-direction: column;
+    }
+    .user-detail-wrapper span:first-child {
+      font-weight: 400;
+      color: #3d5170;
+    }
+    .user-detail-wrapper span:last-child {
+      color: #818ea3;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+  }
+}
